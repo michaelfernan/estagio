@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
-// Fibonacci component
+// Fibonacci
 const Fibonacci = () => {
   const [number, setNumber] = useState('');
   const [message, setMessage] = useState('');
@@ -40,7 +40,7 @@ const Fibonacci = () => {
   );
 };
 
-// Verificar letra 'a'
+// Verificar 'a'
 const ContarA = () => {
   const [text, setText] = useState('');
   const [result, setResult] = useState('');
@@ -71,7 +71,7 @@ const ContarA = () => {
   );
 };
 
-// Resultado do código INDICE
+// Resultado
 const SomaResultado = () => {
   let INDICE = 12;
   let SOMA = 0;
@@ -90,22 +90,49 @@ const SomaResultado = () => {
   );
 };
 
-// Sequências lógicas
+// Função para calcular o próximo elemento em cada sequência
+const calcularProximaSequencia = (sequencia) => {
+  switch (sequencia) {
+    case 'a': // Sequência de ímpares
+      return [1, 3, 5, 7, 9];
+    case 'b': // Potências de 2
+      return [2, 4, 8, 16, 32, 64, 128];
+    case 'c': // Quadrados perfeitos
+      return [0, 1, 4, 9, 16, 25, 36, 49];
+    case 'd': // Quadrados perfeitos pares
+      return [4, 16, 36, 64, 100];
+    case 'e': // Fibonacci
+      return [1, 1, 2, 3, 5, 8, 13];
+    case 'f': // Números entre 10 e 20 exceto 11, 13, 14, 15
+      return [2, 10, 12, 16, 17, 18, 19, 20];
+    default:
+      return [];
+  }
+};
+
+// Sequências
 const Sequencias = () => {
+  const sequenciaA = calcularProximaSequencia('a');
+  const sequenciaB = calcularProximaSequencia('b');
+  const sequenciaC = calcularProximaSequencia('c');
+  const sequenciaD = calcularProximaSequencia('d');
+  const sequenciaE = calcularProximaSequencia('e');
+  const sequenciaF = calcularProximaSequencia('f');
+
   return (
     <div>
       <h2>Sequências e o próximo elemento</h2>
-      <p>a) 1, 3, 5, 7, <b>9</b></p>
-      <p>b) 2, 4, 8, 16, 32, 64, <b>128</b></p>
-      <p>c) 0, 1, 4, 9, 16, 25, 36, <b>49</b></p>
-      <p>d) 4, 16, 36, 64, <b>100</b></p>
-      <p>e) 1, 1, 2, 3, 5, 8, <b>13</b></p>
-      <p>f) 2, 10, 12, 16, 17, 18, 19, <b>20</b></p>
+      <p>a) {sequenciaA.join(', ')}</p>
+      <p>b) {sequenciaB.join(', ')}</p>
+      <p>c) {sequenciaC.join(', ')}</p>
+      <p>d) {sequenciaD.join(', ')}</p>
+      <p>e) {sequenciaE.join(', ')}</p>
+      <p>f) {sequenciaF.join(', ')}</p>
     </div>
   );
 };
 
-// Interruptores - Enigma
+// Enigma
 const Interruptores = () => {
   return (
     <div>
