@@ -90,20 +90,20 @@ const SomaResultado = () => {
   );
 };
 
-// Função para calcular o próximo elemento em cada sequência
+// Função para calcular o próximo.
 const calcularProximaSequencia = (sequencia) => {
   switch (sequencia) {
-    case 'a': // Sequência de ímpares
+    case 'a':
       return [1, 3, 5, 7, 9];
-    case 'b': // Potências de 2
+    case 'b':
       return [2, 4, 8, 16, 32, 64, 128];
-    case 'c': // Quadrados perfeitos
+    case 'c':
       return [0, 1, 4, 9, 16, 25, 36, 49];
-    case 'd': // Quadrados perfeitos pares
+    case 'd':
       return [4, 16, 36, 64, 100];
-    case 'e': // Fibonacci
+    case 'e':
       return [1, 1, 2, 3, 5, 8, 13];
-    case 'f': // Números entre 10 e 20 exceto 11, 13, 14, 15
+    case 'f':
       return [2, 10, 12, 16, 17, 18, 19, 20];
     default:
       return [];
