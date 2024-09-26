@@ -64,13 +64,13 @@ Solução para o problema dos interruptores conectados a lâmpadas em salas dife
 1. Clone o repositório para sua máquina local:
 
    \`\`\`bash
-   git clone <URL_DO_REPOSITORIO>
+   git clone git@github.com:michaelfernan/estagio.git
    \`\`\`
 
 2. Navegue até o diretório do projeto:
 
    \`\`\`bash
-   cd nome-do-projeto
+   cd estagio
    \`\`\`
 
 3. Instale as dependências:
