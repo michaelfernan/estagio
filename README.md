@@ -1,70 +1,91 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Desafio Técnico - Aplicação em React
 
-## Available Scripts
+Este projeto foi desenvolvido como parte de um desafio técnico. Ele inclui diversas funcionalidades, como verificação da sequência de Fibonacci, contagem de letras em uma string, cálculo de soma de uma sequência e resoluções de problemas lógicos.
 
-In the project directory, you can run:
+## Funcionalidades Implementadas
+
+1. **Verificador de Fibonacci**  
+   Verifica se um número informado pertence à sequência de Fibonacci.
+   
+2. **Contador de Letras 'A'**  
+   Conta quantas vezes a letra 'a' (maiúscula ou minúscula) aparece em uma string informada.
+   
+3. **Cálculo da Soma de Sequência**  
+   Exibe o resultado da soma de uma sequência numérica com base em um trecho de código fornecido no desafio.
+   
+4. **Sequências Numéricas**  
+   Calcula e exibe o próximo número de diversas sequências lógicas.
+   
+5. **Enigma dos Interruptores**  
+   Apresenta uma solução para o enigma dos interruptores e lâmpadas.
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode executar:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Executa a aplicação no modo de desenvolvimento.  
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-la no navegador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A página será recarregada automaticamente quando você fizer alterações no código.  
+Erros e avisos também serão exibidos no console do navegador.
 
-### `npm test`
+## Descrição das Funcionalidades
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Verificador de Fibonacci
 
-### `npm run build`
+A função implementada permite ao usuário informar um número e verificar se ele pertence à sequência de Fibonacci. O cálculo da sequência é feito até o valor informado, e uma mensagem é exibida na tela indicando se o número faz parte ou não da sequência.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Contador de Letras 'A'
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ao informar uma string, o sistema verifica quantas vezes a letra 'a' (seja maiúscula ou minúscula) aparece. A contagem é exibida ao usuário, ou uma mensagem informando que a letra não foi encontrada.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Cálculo da Soma
 
-### `npm run eject`
+Uma sequência numérica baseada em um código fornecido no desafio é processada, e o resultado final da soma é exibido. A fórmula e a lógica seguem o código `while` implementado no desafio.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 4. Sequências Numéricas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+O projeto inclui a lógica para várias sequências numéricas comuns (números ímpares, potências de 2, quadrados perfeitos, Fibonacci e outras). O próximo elemento em cada sequência é calculado e exibido dinamicamente.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 5. Enigma dos Interruptores
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Solução para o problema dos interruptores conectados a lâmpadas em salas diferentes. A explicação do enigma é apresentada na interface do usuário.
 
-## Learn More
+## Tecnologias Utilizadas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React.js:** Framework JavaScript para construir a interface do usuário.
+- **CSS:** Para estilização básica da aplicação.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Como Rodar o Projeto
 
-### Code Splitting
+1. Clone o repositório para sua máquina local:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   \`\`\`bash
+   git clone <URL_DO_REPOSITORIO>
+   \`\`\`
 
-### Analyzing the Bundle Size
+2. Navegue até o diretório do projeto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   \`\`\`bash
+   cd nome-do-projeto
+   \`\`\`
 
-### Making a Progressive Web App
+3. Instale as dependências:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   \`\`\`bash
+   npm install
+   \`\`\`
 
-### Advanced Configuration
+4. Inicie o servidor de desenvolvimento:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   \`\`\`bash
+   npm start
+   \`\`\`
 
-### Deployment
+5. Abra [http://localhost:3000](http://localhost:3000) no navegador para visualizar a aplicação.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
